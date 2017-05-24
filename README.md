@@ -16,3 +16,8 @@ echo '{ "presets": ["es2017"] }' > .babelrc
 
 ./node_modules/.bin/babel-node async-await.js
 ```
+
+
+await命令只能用在async函数
+
+await命令后面的Promise对象，运行结果可能是rejected，所以最好把await命令放在try...catch代码块中。
